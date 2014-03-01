@@ -1,4 +1,11 @@
 <?php
+/**
+ * http://blog.mongohq.com/connect-to-mongohq/
+ * https://devcenter.heroku.com/articles/mongohq
+ * http://docs.mongohq.com/languages/php.html
+ *
+ *
+ */
 // mongodb://{$dbuser}:{$dbpass}@{$dburl}:{$dbport}/{$dbname}
 // cmd - mongo troup.mongohq.com:10081/app22637187 -u test -ptest
 // соединение
