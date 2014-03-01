@@ -3,8 +3,8 @@
  * http://blog.mongohq.com/connect-to-mongohq/
  * https://devcenter.heroku.com/articles/mongohq
  * http://docs.mongohq.com/languages/php.html
- *
- *
+ * http://www.amido.co.uk/chris-gray/compiling-php-extensions-like-mongo-and-memcache-on-heroku/
+ * http://chrismcleod.me/2011/11/30/use-custom-php-extensions-on-heroku/
  */
 // mongodb://{$dbuser}:{$dbpass}@{$dburl}:{$dbport}/{$dbname}
 // cmd - mongo troup.mongohq.com:10081/app22637187 -u test -ptest

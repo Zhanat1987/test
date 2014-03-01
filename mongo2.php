@@ -6,7 +6,7 @@
 <?php
 echo 'test<br />';
 try {
-    ini_set ('extension', '/ext/mongo.so');
+//    ini_set ('extension', '/ext/mongo.so');
 // connect to MongoHQ assuming your MONGOHQ_URL environment
 // variable contains the connection string
     $connection_url = getenv("MONGOHQ_URL");
