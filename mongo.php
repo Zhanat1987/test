@@ -20,7 +20,7 @@ echo '</pre>';
 //$testCollection = $db->testCollection;
 $db = $m->selectDB('app22637187');
 $testCollection = $db->selectCollection('testCollection');
-$insert = ["user" => "demo@9lessons.info", "password" => md5("demo_password")];
+$insert = array("user" => "demo@9lessons.info", "password" => md5("demo_password"));
 $testCollection->insert($insert);
 echo '<p>Записей в таблице - <b>' . $testCollection->count() . '</b></p>';
 $rows = $testCollection->find();
