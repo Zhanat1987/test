@@ -4,15 +4,19 @@
 <body>
 <h1>MongoHQ Test</h1>
 <?php
+echo 'test<br />';
 try {
 // connect to MongoHQ assuming your MONGOHQ_URL environment
 // variable contains the connection string
     $connection_url = getenv("MONGOHQ_URL");
+    echo $connection_url . '<br />';
 // create the mongo connection object
     $m = new MongoClient($connection_url);
 // extract the DB name from the connection path
     $url = parse_url($connection_url);
+    echo $url . '<br />';
     $db_name = preg_replace('/\/(.*)/', '$1', $url['path']);
+    echo $db_name . '<br />';
 // use the database we connected to
     $db = $m->selectDB($db_name);
     echo "<h2>Collections</h2>";
