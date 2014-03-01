@@ -12,7 +12,8 @@ try {
     $connection_url = getenv("MONGOHQ_URL");
     echo $connection_url . '<br />';
 // create the mongo connection object
-    $m = new MongoClient($connection_url);
+//    $m = new MongoClient($connection_url);
+    $m = new Mongo($connection_url);
 // extract the DB name from the connection path
     $url = parse_url($connection_url);
     echo $url . '<br />';
