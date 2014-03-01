@@ -6,7 +6,7 @@ header('Content-Type: text/html; charset=utf-8');
 <?php
 echo '<p>Текущие дата и время - <b>' . date('m.d.Y H:i:s') . '</b></p>';
 // соединение
-$m = new MongoClient('mongodb://<user>:<password>@troup.mongohq.com:10081/app22637187');
+$m = new MongoClient('mongodb://heroku:heroku@troup.mongohq.com:10081/app22637187');
 // получаем базу данных "testDb"
 $db = $m->testDb;
 $testCollection = $db->testCollection;
