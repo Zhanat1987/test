@@ -9,8 +9,9 @@
 // mongodb://{$dbuser}:{$dbpass}@{$dburl}:{$dbport}/{$dbname}
 // cmd - mongo troup.mongohq.com:10081/app22637187 -u test -ptest
 // соединение
-$m = new MongoClient('mongodb://heroku:heroku@troup.mongohq.com:10081/app22637187');
+//$m = new MongoClient('mongodb://heroku:heroku@troup.mongohq.com:10081/app22637187');
 //$m = new MongoClient('mongodb://heroku:c3a9e55cf2ef8fdbaa0b3174ed4045b1@troup.mongohq.com:10081');
+$m = new Mongo('mongodb://heroku:heroku@troup.mongohq.com:10081/app22637187');
 echo '<pre>';
 var_dump($m);
 echo '</pre>';
