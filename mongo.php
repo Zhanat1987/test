@@ -9,8 +9,8 @@
 // mongodb://{$dbuser}:{$dbpass}@{$dburl}:{$dbport}/{$dbname}
 // cmd - mongo troup.mongohq.com:10081/app22637187 -u test -ptest
 // соединение
-//$m = new MongoClient('mongodb://heroku:c3a9e55cf2ef8fdbaa0b3174ed4045b1@troup.mongohq.com:10081/app22637187');
-$m = new MongoClient('mongodb://heroku:c3a9e55cf2ef8fdbaa0b3174ed4045b1@troup.mongohq.com:10081');
+$m = new MongoClient('mongodb://heroku:heroku@troup.mongohq.com:10081/app22637187');
+//$m = new MongoClient('mongodb://heroku:c3a9e55cf2ef8fdbaa0b3174ed4045b1@troup.mongohq.com:10081');
 echo '<pre>';
 var_dump($m);
 echo '</pre>';
@@ -18,7 +18,7 @@ echo '</pre>';
 //$db = $m->testDb;
 //$testCollection = $db->testCollection;
 $db = $m->selectDB('app22637187');
-$testCollection = $db->selectCollection('user');
+$testCollection = $db->selectCollection('testCollection');
 $insert = ["user" => "demo@9lessons.info", "password" => md5("demo_password")];
 $testCollection->insert($insert);
 echo '<p>Записей в таблице - <b>' . $testCollection->count() . '</b></p>';
