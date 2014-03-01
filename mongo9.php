@@ -10,6 +10,7 @@ try {
 // connect to MongoHQ assuming your MONGOHQ_URL environment
 // variable contains the connection string
     $connection_url = 'mongodb://heroku:6b26dcd6b4edbe356ceeaec644521974@troup.mongohq.com:10081/app22637187';
+    $connection_url = 'mongodb://heroku:heroku@troup.mongohq.com:10081/app22637187';
     echo $connection_url . '<br />';
 // create the mongo connection object
 //    $m = new MongoClient($connection_url);
