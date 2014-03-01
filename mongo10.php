@@ -9,7 +9,7 @@ try {
 //    ini_set ('extension', '/ext/mongo.so');
 // connect to MongoHQ assuming your MONGOHQ_URL environment
 // variable contains the connection string
-    $connection_url = 'mongodb://test:a6de521abefc2fed4f5876855a3484f5@troup.mongohq.com:10081';
+    $connection_url = 'mongodb://test:a6de521abefc2fed4f5876855a3484f5@troup.mongohq.com:10081/app22637187';
     echo $connection_url . '<br />';
 // create the mongo connection object
 //    $m = new MongoClient($connection_url);
