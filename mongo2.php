@@ -48,7 +48,11 @@ try {
 // disconnect from server
     $m->close();
 } catch (MongoConnectionException $e) {
-    die('Error connecting to MongoDB server');
+    $error = <<<MongoConnectionException
+Error connecting to MongoDB server, message -, {$e->getMessage()}, code - {$e->getCode()},
+line - {$e->getLine()}, file - {$e->getFile()}.
+MongoConnectionException;
+    die($error);
 } catch (MongoException $e) {
     die('Mongo Error: ' . $e->getMessage());
 } catch (Exception $e) {
