@@ -52,6 +52,7 @@ try {
 } catch (Exception $e) {
     die('Error: ' . $e->getMessage());
 }
+echo 'test 2<br />';
 ?>
 </body>
 </html> 
