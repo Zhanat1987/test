@@ -10,7 +10,7 @@
 // cmd - mongo troup.mongohq.com:10081/app22637187 -u test -ptest
 // соединение
 //$m = new MongoClient('mongodb://heroku:c3a9e55cf2ef8fdbaa0b3174ed4045b1@troup.mongohq.com:10081/app22637187');
-$m = new Mongo('mongodb://heroku:c3a9e55cf2ef8fdbaa0b3174ed4045b1@troup.mongohq.com:10081');
+$m = new Mongo('mongodb://heroku:6b26dcd6b4edbe356ceeaec644521974@troup.mongohq.com:10081');
 echo '<pre>';
 var_dump($m);
 echo '</pre>';
